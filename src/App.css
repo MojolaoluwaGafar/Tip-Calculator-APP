@@ -5,18 +5,79 @@
 }
 
 :root{
-    --Strongcyan: hsl(172, 67%, 45%),
-    --Verydarkcyan: hsl(183, 100%, 15%),
-    --Darkgrayishcyan: hsl(186, 14%, 43%),
-    --Grayishcyan: hsl(184, 14%, 56%),
-    --Lightgrayishcyan: hsl(185, 41%, 84%),
-    --Verylightgrayish cyan: hsl(189, 41%, 97%),
-    --White: hsl(0, 0%, 100%),
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --shadeofred: #c76847;
 }
 
- #mainbg{
-    background-color: var(--Lightgrayishcyan) !important;
- }
- #heading{
-    color: var(--Darkgrayishcyan);
- }
+.mainbg{
+  background-color: var(--Lightgrayishcyan);
+}
+h1{
+  color: var(--Darkgrayishcyan);
+}
+label{
+  color: var(--Darkgrayishcyan);
+}
+input{
+  background-color: var(--Verylightgrayishcyan);
+  color: var(--Verydarkcyan);
+}
+input:focus{
+  outline: none;
+  color: var(--Verydarkcyan);
+  border: 3px solid var(--Strongcyan);
+  cursor: pointer;
+}
+.percentageinput::placeholder{
+  color: var(--Darkgrayishcyan);
+}
+
+.btnstrongcyan{
+  background-color: var(--Strongcyan);
+  cursor: pointer;
+  color: var(--Verydarkcyan);
+}
+.btnverydarkcyan{
+  background-color: var(--Verydarkcyan);
+}
+.btnverydarkcyan:hover{
+  background-color: var(--Lightgrayishcyan);
+  color: var(--Verydarkcyan);
+  cursor: pointer;
+}
+span{
+  color: var(--shadeofred);
+}
+.peopleinputinactive{
+  border: 3px solid var(--shadeofred);
+}
+.peopleinputinactive:focus{
+  border: var(--shadeofred);
+}
+
+.peopleinputactive:focus{
+border: 3px solid var(--Strongcyan);
+}
+
+.totalcard{
+  background-color: var(--Verydarkcyan);
+}
+.perperson{
+  color: var(--Lightgrayishcyan);
+}
+.textstrongcyan{
+  color: var(--Strongcyan);
+}
+.resetbtn{
+  background-color: var(--Strongcyan);
+  color: var(--Verydarkcyan);
+}
+.resetbtn:hover{
+  background-color: var(--Lightgrayishcyan);
+}
