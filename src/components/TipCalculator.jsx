@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const TipCalculator = () => {
   const [bill, setBill] = useState(142.55);
-  const [tipPercentage, setTipPercentage] = useState("");
+  const [tipPercentage, setTipPercentage] = useState(15);
   const [numberOfPeople, setNumberOfPeople] = useState(5);
 
   const tipAmount = numberOfPeople > 0 ? (bill * (tipPercentage / 100)) / numberOfPeople : 0;
@@ -12,7 +12,7 @@ const TipCalculator = () => {
 
   const handleReset = () => {
     setBill(0);
-    setTipPercentage(15);
+    setTipPercentage("");
     setNumberOfPeople(1);
   };
 
