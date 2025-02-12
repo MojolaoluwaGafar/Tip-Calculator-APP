@@ -80,4 +80,5 @@ border: 3px solid var(--Strongcyan);
 }
 .resetbtn:hover{
   background-color: var(--Lightgrayishcyan);
+  cursor:pointer;
 }
